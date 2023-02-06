@@ -32,7 +32,7 @@ def sockMerchant(n, ar):
     
 
 if __name__ == '__main__':
-    fptr = open(os.environ['a.txt'], 'w')
+    fptr = open(os.environ[a.txt], 'w')
 
     n = int(input().strip())
 
