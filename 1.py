@@ -17,6 +17,18 @@ import sys
 
 def sockMerchant(n, ar):
     # Write your code here
+    ar.sort()
+    d={}
+    for i in ar:
+        if i not in d.keys():
+            d[i] = 1
+        else:
+            d[i] += 1
+    sum = 0
+    for i in d:
+        if d[i]>1:
+            sum += d[i]//2
+    return sum
     
 
 if __name__ == '__main__':
